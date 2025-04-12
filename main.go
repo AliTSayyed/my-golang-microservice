@@ -8,9 +8,10 @@ import (
 )
 
 func main() {
+	// create a new instance of out app
 	app := application.New()
 	err := app.Start(context.TODO())
 	if err != nil {
-		fmt.Println("Failed to start app:", err)
+		fmt.Println("failed to start app:", err)
 	}
 }
